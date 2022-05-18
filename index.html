@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="scripts/main.js" defer></script>
+    
+  </head>
+  <body>
+        <header>
+            <h1>BATTLESHIP</h1>
+            <h3 class="result" id="result-text"></h3 class="result">
+        </header>
+        
+        <div class="game-container">
+            <div class="grid-container">
+                <h4>Player</h4>
+                <div class="grid" id="grid1"></div>
+            </div>
+            <div class="grid-container">
+                <h4>Computer</h4>
+                <div class="grid" id="grid2"></div>
+            </div>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <div class="overlay-container">
+                <h2 class="place" >Place your <bold id="ship-type">Carrier</bold></h2>
+                <button id="rotate-btn">Rotate</button>
+                <div class="grid" id="overlay-grid">
+                </div>
+            </div>
+        </div>
+
+        <div class="alert hidden" id="alert">
+            <div class="alert-container">
+                <h1 id="alert-result">You won!</h1>
+                <button id="alert-button">Play again</button>
+            </div>
+        </div>
+  </body>
+  
+</html>
